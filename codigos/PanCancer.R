@@ -50,7 +50,7 @@
   {
     #Clínico
     {
-    clinical1 <- read.csv("C:/Users/Denisse González/Downloads/Data/Colorectal/clinical.csv", header = TRUE, sep = ",")
+    clinical1 <- read.csv("../Data/Colorectal/clinical.csv", header = TRUE, sep = ",")
     #View(clinical1)
     # Reemplazar ''--' por NA
     clinical1[clinical1 == "'--"] <- NA
@@ -90,7 +90,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal1 <- "C:/Users/Denisse González/Downloads/Data/Colorectal"
+      directorio_principal1 <- "../Data/Colorectal"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista1 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -182,7 +182,7 @@
   {
    #Clínicos
     {
-      clinical2 <- read.csv("C:/Users/Denisse González/Downloads/Data/Pancreas/clinical.csv", header = TRUE, sep = ",")
+      clinical2 <- read.csv("../Data/Pancreas/clinical.csv", header = TRUE, sep = ",")
       #View(clinical2)
       # Reemplazar ''--' por NA
       clinical2[clinical2 == "'--"] <- NA
@@ -225,7 +225,7 @@
       library(R.utils)
       library(data.table)
       # Define el directorio principal donde están las carpetas
-      directorio_principal2 <- "C:/Users/Denisse González/Downloads/Data/Pancreas"
+      directorio_principal2 <- "../Data/Pancreas"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista2 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -311,7 +311,7 @@
   {
     #Clinical
     {
-      clinical3 <- read.csv("C:/Users/Denisse González/Downloads/Data/Liver/clinical.csv", header = TRUE, sep = ",")
+      clinical3 <- read.csv("../Data/Liver/clinical.csv", header = TRUE, sep = ",")
       # View(clinical3)
       # Reemplazar ''--' por NA
       clinical3[clinical3 == "'--"] <- NA
@@ -347,7 +347,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal3 <- "C:/Users/Denisse González/Downloads/Data/Liver"
+      directorio_principal3 <- "../Data/Liver"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista3 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -432,7 +432,7 @@
   {
     #Clinico
     {
-      clinical4 <- read.csv("C:/Users/Denisse González/Downloads/Data/Stomach/clinical.csv", header = TRUE, sep = ",")
+      clinical4 <- read.csv("../Data/Stomach/clinical.csv", header = TRUE, sep = ",")
       # View(clinical4)
       # Reemplazar ''--' por NA
       clinical4[clinical4 == "'--"] <- NA
@@ -463,7 +463,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal4 <- "C:/Users/Denisse González/Downloads/Data/Stomach"
+      directorio_principal4 <- "../Data/Stomach"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista4 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -549,7 +549,7 @@
   {
     #Clinico
     {
-      clinical5 <- read.csv("C:/Users/Denisse González/Downloads/Data/Brain/clinical.csv", header = TRUE, sep = ",")
+      clinical5 <- read.csv("../Data/Brain/clinical.csv", header = TRUE, sep = ",")
       # View(clinical5)
       # Reemplazar ''--' por NA
       clinical5[clinical5 == "'--"] <- NA
@@ -585,7 +585,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal5 <- "C:/Users/Denisse González/Downloads/Data/Brain"
+      directorio_principal5 <- "../Data/Brain"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista5 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -674,7 +674,7 @@
   {
     #Clinico
     {
-      clinical6 <- read.csv("C:/Users/Denisse González/Downloads/Data/Esophagus/clinical.csv", header = TRUE, sep = ",")
+      clinical6 <- read.csv("../Data/Esophagus/clinical.csv", header = TRUE, sep = ",")
       # View(clinical6)
       # Reemplazar ''--' por NA
       clinical6[clinical6 == "'--"] <- NA
@@ -710,7 +710,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal6 <- "C:/Users/Denisse González/Downloads/Data/Esophagus"
+      directorio_principal6 <- "../Data/Esophagus"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista6 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -796,7 +796,7 @@
   {
     #Clinico
     {
-      clinical7 <- read.csv("C:/Users/Denisse González/Downloads/Data/Bladder/clinical.csv", header = TRUE, sep = ",")
+      clinical7 <- read.csv("../Data/Bladder/clinical.csv", header = TRUE, sep = ",")
     # View(clinical7)
     # Reemplazar ''--' por NA
     clinical7[clinical7 == "'--"] <- NA
@@ -832,7 +832,7 @@
   #Mutaciones
   {
     # Define el directorio principal donde están las carpetas
-    directorio_principal7 <- "C:/Users/Denisse González/Downloads/Data/Bladder"
+    directorio_principal7 <- "../Data/Bladder"
     # Inicializa una lista para almacenar la información de los archivos .maf
     resultados_lista7 <- list()
     # Obtiene la lista de carpetas dentro del directorio principal
@@ -915,7 +915,7 @@
   {
     #Clinico
     {
-      clinical8 <- read.csv("C:/Users/Denisse González/Downloads/Data/Lung/clinical.csv", header = TRUE, sep = ",")
+      clinical8 <- read.csv("../Data/Lung/clinical.csv", header = TRUE, sep = ",")
       # View(clinical8)
       # Reemplazar ''--' por NA
       clinical8[clinical8 == "'--"] <- NA
@@ -951,7 +951,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal8 <- "C:/Users/Denisse González/Downloads/Data/Lung"
+      directorio_principal8 <- "../Data/Lung"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista8 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -1035,7 +1035,7 @@
   {
     #Clinico
     {
-      clinical9 <- read.csv("C:/Users/Denisse González/Downloads/Data/Breast/clinical.csv", header = TRUE, sep = ",")
+      clinical9 <- read.csv("../Data/Breast/clinical.csv", header = TRUE, sep = ",")
       # View(clinical9)
       # Reemplazar ''--' por NA
       clinical9[clinical9 == "'--"] <- NA
@@ -1071,7 +1071,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal9 <- "C:/Users/Denisse González/Downloads/Data/Breast"
+      directorio_principal9 <- "../Data/Breast"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista9 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -1155,7 +1155,7 @@
   {
     #Clinico
     {
-      clinical10 <- read.csv("C:/Users/Denisse González/Downloads/Data/Kidney/clinical.csv", header = TRUE, sep = ",")
+      clinical10 <- read.csv("../Data/Kidney/clinical.csv", header = TRUE, sep = ",")
       # View(clinical10)
       # Reemplazar ''--' por NA
       clinical10[clinical10 == "'--"] <- NA
@@ -1186,7 +1186,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal10 <- "C:/Users/Denisse González/Downloads/Data/Kidney"
+      directorio_principal10 <- "../Data/Kidney"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista10 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -1270,7 +1270,7 @@
   {
     #Clinico
     {
-      clinical11 <- read.csv("C:/Users/Denisse González/Downloads/Data/Adrenal/clinical.csv", header = TRUE, sep = ",")
+      clinical11 <- read.csv("../Data/Adrenal/clinical.csv", header = TRUE, sep = ",")
       # View(clinical11)
       # Reemplazar ''--' por NA
       clinical11[clinical11 == "'--"] <- NA
@@ -1301,7 +1301,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal11 <- "C:/Users/Denisse González/Downloads/Data/Adrenal"
+      directorio_principal11 <- "../Data/Adrenal"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista11 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -1385,7 +1385,7 @@
   {
     #Clinico
     {
-      clinical12 <- read.csv("C:/Users/Denisse González/Downloads/Data/Head/clinical.csv", header = TRUE, sep = ",")
+      clinical12 <- read.csv("../Data/Head/clinical.csv", header = TRUE, sep = ",")
       # View(clinical12)
       # Reemplazar ''--' por NA
       clinical12[clinical12 == "'--"] <- NA
@@ -1416,7 +1416,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal12 <- "C:/Users/Denisse González/Downloads/Data/Head"
+      directorio_principal12 <- "../Data/Head"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista12 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -1500,7 +1500,7 @@
   {
     #Clinico
     {
-      clinical13 <- read.csv("C:/Users/Denisse González/Downloads/Data/Uterus/clinical.csv", header = TRUE, sep = ",")
+      clinical13 <- read.csv("../Data/Uterus/clinical.csv", header = TRUE, sep = ",")
       # View(clinical13)
       # Reemplazar ''--' por NA
       clinical13[clinical13 == "'--"] <- NA
@@ -1531,7 +1531,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal13 <- "C:/Users/Denisse González/Downloads/Data/Uterus"
+      directorio_principal13 <- "../Data/Uterus"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista13 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -1615,7 +1615,7 @@
   {
     #Clinico
     {
-      clinical14 <- read.csv("C:/Users/Denisse González/Downloads/Data/Skin/clinical.csv", header = TRUE, sep = ",")
+      clinical14 <- read.csv("../Data/Skin/clinical.csv", header = TRUE, sep = ",")
       # View(clinical14)
       # Reemplazar ''--' por NA
       clinical14[clinical14 == "'--"] <- NA
@@ -1646,7 +1646,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal14 <- "C:/Users/Denisse González/Downloads/Data/Skin"
+      directorio_principal14 <- "../Data/Skin"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista14 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -1730,7 +1730,7 @@
   {
     #Clinico
     {
-      clinical15 <- read.csv("C:/Users/Denisse González/Downloads/Data/Thyroid/clinical.csv", header = TRUE, sep = ",")
+      clinical15 <- read.csv("../Data/Thyroid/clinical.csv", header = TRUE, sep = ",")
       # View(clinical15)
       # Reemplazar ''--' por NA
       clinical15[clinical15 == "'--"] <- NA
@@ -1761,7 +1761,7 @@
     #Mutaciones
     {
       # Define el directorio principal donde están las carpetas
-      directorio_principal15 <- "C:/Users/Denisse González/Downloads/Data/Thyroid"
+      directorio_principal15 <- "../Data/Thyroid"
       # Inicializa una lista para almacenar la información de los archivos .maf
       resultados_lista15 <- list()
       # Obtiene la lista de carpetas dentro del directorio principal
@@ -2199,12 +2199,12 @@
     #OrigiMed, Nature 2022
     {
     #Datos tipo de cancer
-    clinical_val1 <- read.csv("C:/Users/Denisse González/Downloads/Data/Validacion/OrigiMed, Nature 2022/data_clinical_sample.csv", header = TRUE, sep = ",")
+    clinical_val1 <- read.csv("../Data/Validacion/OrigiMed, Nature 2022/data_clinical_sample.csv", header = TRUE, sep = ",")
     clinical_val1 <- clinical_val1 %>%
       select(SAMPLE_ID, CANCER_TYPE)
     #View(clinical_val1)
     #Datos de mutaciones
-    mutaciones_val1<-read.csv("C:/Users/Denisse González/Downloads/Data/Validacion/OrigiMed, Nature 2022/data_mutations.csv", header = TRUE, sep = ",")
+    mutaciones_val1<-read.csv("../Data/Validacion/OrigiMed, Nature 2022/data_mutations.csv", header = TRUE, sep = ",")
     #View(mutaciones_val1)
     mutaciones_val1 <- mutaciones_val1 %>%
       mutate(Identificador = paste0("chr", Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2)) %>%
@@ -2222,12 +2222,12 @@
     #TCGA, Firehose Legacy (tiroides)
     {
     #Datos tipo de cancer
-      clinical_val2 <- read.csv("C:/Users/Denisse González/Downloads/Data/Validacion/TCGA, Firehose Legacy/data_clinical_sample.csv", header = TRUE, sep = ",")
+      clinical_val2 <- read.csv("../Data/Validacion/TCGA, Firehose Legacy/data_clinical_sample.csv", header = TRUE, sep = ",")
       clinical_val2 <- clinical_val2 %>%
         select(SAMPLE_ID, CANCER_TYPE)
       #View(clinical_val2)
     #Datos de mutaciones
-      mutaciones_val2 <- read.csv("C:/Users/Denisse González/Downloads/Data/Validacion/TCGA, Firehose Legacy/data_mutations.csv", header = TRUE, sep = ",")
+      mutaciones_val2 <- read.csv("../Data/Validacion/TCGA, Firehose Legacy/data_mutations.csv", header = TRUE, sep = ",")
        mutaciones_val2 <- mutaciones_val2 %>%
         mutate(Identificador = paste0("chr", Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2)) %>%
         select(Identificador, Hugo_Symbol, Tumor_Sample_Barcode, Chromosome, Start_Position, End_Position, Tumor_Seq_Allele1, Tumor_Seq_Allele2) %>%
@@ -2285,7 +2285,7 @@
     }
       #Archivo procesado GRCh38
       {
-        bed_data <- read.table("C:/Users/Denisse González/Downloads/Data/Validacion/BED.bed", header = FALSE, sep = "\t")
+        bed_data <- read.table("../Data/Validacion/BED.bed", header = FALSE, sep = "\t")
           bed_data <- bed_data[, -ncol(bed_data)]
           colnames(bed_data) <- c("Chromosome2", "Start_Position2", "End_Position2", "Identificador2")
           View(bed_data)
