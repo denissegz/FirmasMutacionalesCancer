@@ -3,7 +3,8 @@
 #Se puede hacer para cualquier cancer, solo se cambia la direccion de los archivos clínicos y de mutaciones (clinical y directorio_principal), en la sección "CARGAR ARCHIVOS"
 #En la parte de "Codificacion de etapas" en la sección "CARGAR ARCHIVOS" se puede escoger que etapas tomar en cuenta segun el estudio que se quiera hacer
 
-#En caso de usar archivos de CBioPortal los archivos se cargaran:
+#En caso de usar archivos de mutaciones de CBioPortal los archivos se cargaran simplemente con:
+# mutaciones<-read.csv("../cBioPortal/MSK, JNCI 2021/data_mutations.csv", header = TRUE, sep = ",")
 
 
 ### LIBRERÍAS
