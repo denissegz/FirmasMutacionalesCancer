@@ -193,6 +193,9 @@ View(data_final)
     filter(pacientes_unicos >= 5)  # Filtrar mutaciones presentes en al menos 5 pacientes
   numero_mutaciones <- nrow(mutaciones_repetidas)
   print(numero_mutaciones)
+  # Ver los nombres de las mutaciones
+  nombres_mutaciones <- mutaciones_repetidas$Identificador
+  print(nombres_mutaciones)
   }
   #Contar mutaciones únicas
   {
