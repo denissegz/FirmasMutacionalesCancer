@@ -16,11 +16,7 @@ Los cánceres con menor número de mutaciones y/o pacientes, como el **cáncer d
 
 Además, los modelos mostraron dificultades de generalización cuando los cánceres no presentaron mutaciones claramente distintivas o cuando había una alta superposición en el espacio de mutaciones. Esto se observó particularmente en cánceres como el **cáncer de esófago** y el **cáncer de estómago**, que, a pesar de contar con una mayor cantidad de pacientes, no mostraron un rendimiento óptimo en los clasificadores.
 
-## 3. Reducción de Dimensionalidad con PCA
-
-La técnica de **Análisis de Componentes Principales (PCA)** se utilizó para reducir la dimensionalidad de los datos y ayudar en la visualización y separación de los cánceres. Los resultados indicaron que los primeros dos componentes principales contribuyeron a la diferenciación de los tipos de cáncer, pero no fueron suficientes para obtener una separación perfecta entre las clases. Esto sugiere que más componentes podrían ser necesarios para una mayor variabilidad en las características de los cánceres.
-
-## 4. Validación de los Modelos
+## 3. Validación de los Modelos
 
 El conjunto de validación, que incluyó un total de **8133 pacientes** y **4569 mutaciones**, mostró que los modelos entrenados para **cáncer de tiroides**, **cáncer de hígado** y **cáncer de riñón** continuaron mostrando buenos resultados, aunque con variaciones en las métricas:
 
@@ -28,7 +24,7 @@ El conjunto de validación, que incluyó un total de **8133 pacientes** y **4569
 - Sin embargo, el modelo para el **cáncer de hígado** mostró un descenso en la **especificidad (21.2%)**, lo que sugiere que el modelo tenía dificultad para diferenciar entre las mutaciones del hígado y las de otros cánceres, con un **AUC de 0.60**, lo que indica un rendimiento moderado.
 - Para el **cáncer de riñón**, aunque la **sensibilidad alcanzó 100%**, la **especificidad fue nula**, lo que sugiere que el modelo pudo predecir correctamente los casos positivos pero falló al identificar los negativos, con un **AUC de 0.5**, similar a la aleatoriedad.
 
-## 5. Importancia de las Mutaciones en la Clasificación
+## 4. Importancia de las Mutaciones en la Clasificación
 
 En todos los modelos, las **mutaciones específicas** para cada cáncer mostraron ser las variables más importantes para la clasificación. Las **4 mutaciones** para el cáncer de tiroides, las **8** para el cáncer de hígado y las **3** para el cáncer de riñón fueron identificadas como las más relevantes. Esto respalda la idea de que algunas mutaciones son fuertemente indicativas de la presencia de ciertos tipos de cáncer y pueden servir como **marcadores diagnósticos confiables**.
 
