@@ -31,7 +31,7 @@
 #MSK, JNCI 2021 
   {
     #Datos clínicos (etapa)
-  clinical1 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/MSK, JNCI 2021/data_clinical_patient.csv", header = TRUE, sep = ",")
+  clinical1 <- read.csv("../cBioPortal/MSK, JNCI 2021/data_clinical_patient.csv", header = TRUE, sep = ",")
   #View(clinical1)
   #Stage definida
   clinical1 <- clinical1 %>%
@@ -40,7 +40,7 @@
   #View(clinical1)
   
   #Datos de muestra (para unir etapa y mutación)
-  sample1<-read.csv("C:/Users/Denisse González/Downloads/cBioPortal/MSK, JNCI 2021/data_clinical_sample.csv", header = TRUE, sep = ",")
+  sample1<-read.csv("../cBioPortal/MSK, JNCI 2021/data_clinical_sample.csv", header = TRUE, sep = ",")
   #View(sample1)
   #Sin metastasis
   sample1 <- sample1[!grepl("Metastasis", sample1$SAMPLE_TYPE, ignore.case = TRUE), ]
@@ -50,7 +50,7 @@
   #View(sample1)
   
   #Datos de mutaciones
-   mutaciones1<-read.csv("C:/Users/Denisse González/Downloads/cBioPortal/MSK, JNCI 2021/data_mutations.csv", header = TRUE, sep = ",")
+   mutaciones1<-read.csv("../cBioPortal/MSK, JNCI 2021/data_mutations.csv", header = TRUE, sep = ",")
    #View(mutaciones1) 
    mutaciones1 <- mutaciones1 %>%
      mutate(Identificador = paste0(Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2))%>%
@@ -68,7 +68,7 @@
   #MSK, JCO Precis Oncol 2022
   {
     #Datos clínicos (etapa)
-    clinical2 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/MSK, JCO Precis Oncol 2022/data_clinical_patient.csv", header = TRUE, sep = ",")
+    clinical2 <- read.csv("../cBioPortal/MSK, JCO Precis Oncol 2022/data_clinical_patient.csv", header = TRUE, sep = ",")
     #View(clinical2)
     #Sin metastasis
     clinical2 <- clinical2[!grepl("Yes", clinical2$METASTATIC, ignore.case = TRUE), ]
@@ -85,7 +85,7 @@
     #View(clinical2)
     
     #Datos de muestra (para unir etapa y mutación)
-    sample2<-read.csv("C:/Users/Denisse González/Downloads/cBioPortal/MSK, JCO Precis Oncol 2022/data_clinical_sample.csv", header = TRUE, sep = ",")
+    sample2<-read.csv("../cBioPortal/MSK, JCO Precis Oncol 2022/data_clinical_sample.csv", header = TRUE, sep = ",")
    # View(sample2)
     #Adenocarcinoma
     sample2 <- sample2[grepl("Colon Adenocarcinoma", sample2$CANCER_TYPE_DETAILED, ignore.case = TRUE), ]
@@ -95,7 +95,7 @@
    # View(sample2)
     
     #Datos de mutaciones
-    mutaciones2<-read.csv("C:/Users/Denisse González/Downloads/cBioPortal/MSK, JCO Precis Oncol 2022/data_mutations.csv", header = TRUE, sep = ",")
+    mutaciones2<-read.csv("../cBioPortal/MSK, JCO Precis Oncol 2022/data_mutations.csv", header = TRUE, sep = ",")
    # View(mutaciones2) 
     mutaciones2 <- mutaciones2 %>%
       mutate(Identificador = paste0(Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2))%>%
@@ -112,7 +112,7 @@
   #MSK, Gastroenterology 2020
   {
     # Datos clínicos (etapa)
-    clinical3 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/MSK, Gastroenterology 2020/data_clinical_patient.csv", header = TRUE, sep = ",")
+    clinical3 <- read.csv("../cBioPortal/MSK, Gastroenterology 2020/data_clinical_patient.csv", header = TRUE, sep = ",")
     #View(clinical3)
     #Sin metastasis
     clinical3 <- clinical3 %>%
@@ -127,7 +127,7 @@
     #View(clinical3)
     
     # Datos de muestra (para unir etapa y mutación)
-    sample3 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/MSK, Gastroenterology 2020/data_clinical_sample.csv", header = TRUE, sep = ",")
+    sample3 <- read.csv("../cBioPortal/MSK, Gastroenterology 2020/data_clinical_sample.csv", header = TRUE, sep = ",")
     #View(sample3)
     #Adenoca
     sample3 <- sample3[grepl("Colon Adenocarcinoma", sample3$CANCER_TYPE_DETAILED, ignore.case = TRUE), ]
@@ -137,7 +137,7 @@
    # View(sample3)
     
     # Datos de mutaciones
-    mutaciones3 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/MSK, Gastroenterology 2020/data_mutations.csv", header = TRUE, sep = ",")
+    mutaciones3 <- read.csv("../cBioPortal/MSK, Gastroenterology 2020/data_mutations.csv", header = TRUE, sep = ",")
     #View(mutaciones3)
     mutaciones3 <- mutaciones3 %>%
       mutate(Identificador = paste0(Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2)) %>%
@@ -154,7 +154,7 @@
   #CAS Shanghai, Cancer Cell 2020
   {
     # Datos clínicos (etapa)
-    clinical4 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/CAS Shanghai, Cancer Cell 2020/data_clinical_patient.csv", header = TRUE, sep = ",")
+    clinical4 <- read.csv("../cBioPortal/CAS Shanghai, Cancer Cell 2020/data_clinical_patient.csv", header = TRUE, sep = ",")
     #View(clinical4)
     # Stage definida
     clinical4 <- clinical4 %>%
@@ -163,7 +163,7 @@
     #View(clinical4)
 
     # Datos de muestra (para unir etapa y mutación)
-    sample4 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/CAS Shanghai, Cancer Cell 2020/data_clinical_sample.csv", header = TRUE, sep = ",")
+    sample4 <- read.csv("../cBioPortal/CAS Shanghai, Cancer Cell 2020/data_clinical_sample.csv", header = TRUE, sep = ",")
     #View(sample4)
     #Sin metastasis
     sample4 <- sample4[grepl("Non-Metastatic", sample4$METASTATIC_STATUS, ignore.case = TRUE), ]
@@ -174,7 +174,7 @@
    # View(sample4)
     
     # Datos de mutaciones
-    mutaciones4 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/CAS Shanghai, Cancer Cell 2020/data_mutations.csv", header = TRUE, sep = ",")
+    mutaciones4 <- read.csv("../cBioPortal/CAS Shanghai, Cancer Cell 2020/data_mutations.csv", header = TRUE, sep = ",")
    # View(mutaciones4)
     mutaciones4 <- mutaciones4 %>%
       mutate(Identificador = paste0(Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2)) %>%
@@ -191,7 +191,7 @@
   #TCGA, PanCancer Atlas
   {
     # Datos clínicos (etapa)
-    clinical5 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/TCGA, PanCancer Atlas/data_clinical_patient.csv", header = TRUE, sep = ",")
+    clinical5 <- read.csv("../cBioPortal/TCGA, PanCancer Atlas/data_clinical_patient.csv", header = TRUE, sep = ",")
     #View(clinical5)
     # Stage definida
     clinical5 <- clinical5 %>%
@@ -210,7 +210,7 @@
    # View(clinical5)
     
     # Datos de muestra (para unir etapa y mutación)
-    sample5 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/TCGA, PanCancer Atlas/data_clinical_sample.csv", header = TRUE, sep = ",")
+    sample5 <- read.csv("../cBioPortal/TCGA, PanCancer Atlas/data_clinical_sample.csv", header = TRUE, sep = ",")
    # View(sample5)
     # Sin metastasis
     sample5 <- sample5[!grepl("Metastasis", sample5$SAMPLE_TYPE, ignore.case = TRUE), ]
@@ -221,7 +221,7 @@
    # View(sample5)
     
     # Datos de mutaciones
-    mutaciones5 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/TCGA, PanCancer Atlas/data_mutations.csv", header = TRUE, sep = ",")
+    mutaciones5 <- read.csv("../cBioPortal/TCGA, PanCancer Atlas/data_mutations.csv", header = TRUE, sep = ",")
    # View(mutaciones5)
     mutaciones5 <- mutaciones5 %>%
       mutate(Identificador = paste0(Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2)) %>%
@@ -238,7 +238,7 @@
   #TCGA, Firehose Legacy
   {
     # Datos clínicos (etapa)
-    clinical6 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/TCGA, Firehose Legacy/data_clinical_patient.csv", header = TRUE, sep = ",")
+    clinical6 <- read.csv("../cBioPortal/TCGA, Firehose Legacy/data_clinical_patient.csv", header = TRUE, sep = ",")
    # View(clinical6)
     # Stage definida
     clinical6 <- clinical6 %>%
@@ -257,7 +257,7 @@
    # View(clinical6)
     
     # Datos de muestra (para unir etapa y mutación)
-    sample6 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/TCGA, Firehose Legacy/data_clinical_sample.csv", header = TRUE, sep = ",")
+    sample6 <- read.csv("../cBioPortal/TCGA, Firehose Legacy/data_clinical_sample.csv", header = TRUE, sep = ",")
    # View(sample6)
     # Sin metastasis
     sample6 <- sample6[!grepl("Metastasis", sample6$SAMPLE_TYPE, ignore.case = TRUE), ]
@@ -268,7 +268,7 @@
     #View(sample6)
     
     # Datos de mutaciones
-    mutaciones6 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/TCGA, Firehose Legacy/data_mutations.csv", header = TRUE, sep = ",")
+    mutaciones6 <- read.csv("../cBioPortal/TCGA, Firehose Legacy/data_mutations.csv", header = TRUE, sep = ",")
     #View(mutaciones6)
     mutaciones6 <- mutaciones6 %>%
       mutate(Identificador = paste0(Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2)) %>%
@@ -286,11 +286,11 @@
   #TCGA, Nature 2012
   {
     # Datos clínicos (etapa)
-   # clinical7 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/TCGA, Nature 2012/data_clinical_patient.csv", header = TRUE, sep = ",")
+   # clinical7 <- read.csv("../cBioPortal/TCGA, Nature 2012/data_clinical_patient.csv", header = TRUE, sep = ",")
     # View(clinical7)
     
     # Datos de muestra (para unir etapa y mutación)
-    sample7 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/TCGA, Nature 2012/data_clinical_sample.csv", header = TRUE, sep = ",")
+    sample7 <- read.csv("../cBioPortal/TCGA, Nature 2012/data_clinical_sample.csv", header = TRUE, sep = ",")
     # View(sample7)
      sample7 <- sample7 %>%
        mutate(STAGE = case_when(
@@ -311,7 +311,7 @@
     # View(sample7)
     
     # Datos de mutaciones
-    mutaciones7 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/TCGA, Nature 2012/data_mutations.csv", header = TRUE, sep = ",")
+    mutaciones7 <- read.csv("../cBioPortal/TCGA, Nature 2012/data_mutations.csv", header = TRUE, sep = ",")
     # View(mutaciones7)
     mutaciones7 <- mutaciones7 %>%
       mutate(Identificador = paste0(Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2)) %>%
@@ -327,11 +327,11 @@
   #DFCI, Cell Reports 2016
   {
     # Datos clínicos (etapa)
-    #clinical8 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/DFCI, Cell Reports 2016/data_clinical_patient.csv", header = TRUE, sep = ",")
+    #clinical8 <- read.csv("../cBioPortal/DFCI, Cell Reports 2016/data_clinical_patient.csv", header = TRUE, sep = ",")
     #View(clinical8)
     
     # Datos de muestra (para unir etapa y mutación)
-    sample8 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/DFCI, Cell Reports 2016/data_clinical_sample.csv", header = TRUE, sep = ",")
+    sample8 <- read.csv("../cBioPortal/DFCI, Cell Reports 2016/data_clinical_sample.csv", header = TRUE, sep = ",")
     # View(sample8)
     #NO ESPECIFICA METASTASIS
     # Adeno
@@ -343,7 +343,7 @@
     # View(sample8)
     
     # Datos de mutaciones
-    mutaciones8 <- read.csv("C:/Users/Denisse González/Downloads/cBioPortal/DFCI, Cell Reports 2016/data_mutations.csv", header = TRUE, sep = ",")
+    mutaciones8 <- read.csv("../cBioPortal/DFCI, Cell Reports 2016/data_mutations.csv", header = TRUE, sep = ",")
     # View(mutaciones8)
     mutaciones8 <- mutaciones8 %>%
       mutate(Identificador = paste0(Chromosome, ":", Start_Position, "_", End_Position, "_", Tumor_Seq_Allele1, "_", Tumor_Seq_Allele2)) %>%
@@ -360,7 +360,7 @@
   {
     #Clinico
     {
-    clinical <- read.csv("C:/Users/Denisse González/Downloads/Data/Colorectal/clinical.csv", header = TRUE, sep = ",")
+    clinical <- read.csv("../Data/Colorectal/clinical.csv", header = TRUE, sep = ",")
     #View(clinical)
     # Reemplazar ''--' por NA
     clinical[clinical == "'--"] <- NA
@@ -399,7 +399,7 @@
   {
     library(data.table)
     # Define el directorio principal donde están las carpetas
-    directorio_principal <- "C:/Users/Denisse González/Downloads/Data/Colorectal"
+    directorio_principal <- "../Data/Colorectal"
     # Inicializa una lista para almacenar la información de los archivos .maf
     resultados_lista <- list()
     # Obtiene la lista de carpetas dentro del directorio principal
@@ -479,7 +479,7 @@
         }
       #Archivo procesado a GRCh37
       {
-        bed_data <- read.table("C:/Users/Denisse González/Downloads/Data/Colorectal/BED.bed", header = FALSE, sep = "\t")
+        bed_data <- read.table("../Data/Colorectal/BED.bed", header = FALSE, sep = "\t")
         bed_data <- bed_data[, -ncol(bed_data)]
         colnames(bed_data) <- c("Chromosome2", "Start_Position2", "End_Position2", "Identificador2")
         View(bed_data)
@@ -531,8 +531,8 @@
     data_final <- data_final %>%
       mutate(classif_stage = ifelse(STAGE %in% c("I", "II"), 1, 0))
     #Etapa 1, 1, las demas 0
-    data_final <- data_final %>%
-      mutate(classif_stage = ifelse(STAGE %in% c("I"), 1, 0))
+    #data_final <- data_final %>%
+    #  mutate(classif_stage = ifelse(STAGE %in% c("I"), 1, 0))
     #Etapa2, 1, las demas 0
     #data_final <- data_final %>%
     #  mutate(classif_stage = ifelse(STAGE %in% c("II"), 1, 0))
@@ -825,7 +825,7 @@
   {
     #Clinico
     {
-      clinical <- read.csv("C:/Users/Denisse González/Downloads/Data/Colorectal/clinical.csv", header = TRUE, sep = ",")
+      clinical <- read.csv("../Data/Colorectal/clinical.csv", header = TRUE, sep = ",")
       View(clinical)
       # Reemplazar ''--' por NA
       clinical[clinical == "'--"] <- NA
